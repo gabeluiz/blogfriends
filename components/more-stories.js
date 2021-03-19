@@ -1,12 +1,13 @@
 import PostPreview from '../components/post-preview'
+import SectionSeparator from './section-separator'
 
 export default function MoreStories({ posts }) {
   return (
     <section>
-      <h4 className="mb-8 text-3xl md:text-4xl font-bold tracking-tighter leading-tight">
+      <h4 className="mb-8 text-center md:text-left text-2xl md:text-4xl font-bold tracking-tighter leading-tight">
         Latest News
       </h4>
-      <div className="grid sm:grid-cols-1 md:grid-cols-4 md:col-gap-4 lg:col-gap-8 row-gap-10 md:row-gap-16 mb-16">
+      <div className="grid md:grid-cols-4 row-gap-4 md:row-gap-10 mb-2 md:md-16">
         {posts.map(({ node }) => (
           <PostPreview
             key={node._meta.uid}

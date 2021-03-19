@@ -16,21 +16,14 @@ export default function HeroPost({
     <section>
       <div className="mb-8 md:mb-16 text-center">
         <div>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
+          <h1 className="text-4xl md:text-8xl mt-6 md:mt-12 font-bold tracking-tighter leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:underline">
                 <RichText render={title} />
               </a>
             </Link>
           </h1>
-          {/* <div className="mb-4 md:mb-0 text-lg">
-            <Date dateString={date} />
-          </div> */}
         </div>
-        {/* <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div> */}
       </div>
       <div className="mb-8 md:mb-16">
         <CoverImage
