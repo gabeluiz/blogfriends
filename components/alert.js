@@ -25,7 +25,7 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              Adicioanar redes sociais aqui... ou o que quiser
+              LOGO
             </>
           )}
         </div>

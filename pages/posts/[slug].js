@@ -10,9 +10,10 @@ import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import { CMS_NAME } from '../../lib/constants'
+import { BLOG_NAME } from '../../lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
+
   const router = useRouter()
   if (!router.isFallback && !post?._meta?.uid) {
     return <ErrorPage statusCode={404} />
@@ -21,7 +22,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        {/* <Header /> */}
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -29,7 +30,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title[0].text} | Next.js Blog Example with {CMS_NAME}
+                  {post.title[0].text} | {BLOG_NAME}
                 </title>
                 <meta property="og:image" content={post.coverimage.url} />
               </Head>
@@ -38,6 +39,7 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverimage}
                 date={post.date}
                 author={post.author}
+                excerpt={post.excerpt}
               />
               <PostBody content={post.content} />
             </article>
@@ -55,6 +57,8 @@ export default function Post({ post, morePosts, preview }) {
 export async function getStaticProps({ params, preview = false, previewData }) {
   const data = await getPostAndMorePosts(params.slug, previewData)
 
+  console.log(data);
+
   return {
     props: {
       preview,
@@ -66,6 +70,7 @@ export async function getStaticProps({ params, preview = false, previewData }) {
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug()
+
   return {
     paths: allPosts?.map(({ node }) => `/posts/${node._meta.uid}`) || [],
     fallback: true,

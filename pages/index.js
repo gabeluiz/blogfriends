@@ -5,7 +5,7 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import { BLOG_NAME } from '../lib/constants'
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0].node
@@ -14,7 +14,7 @@ export default function Index({ preview, allPosts }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>{CMS_NAME}</title>
+          <title>{BLOG_NAME}</title>
         </Head>
         <Container>
           <Intro />
