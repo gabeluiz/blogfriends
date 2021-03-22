@@ -16,9 +16,9 @@ export default function HeroPost({
     <section>
       <div className="mb-8 md:mb-16 text-center">
         <div>
-          <h1 className="text-4xl md:text-8xl mt-6 md:mt-12 font-bold tracking-tighter leading-tight">
+          <h1 className="text-4xl md:text-7xl mt-6 md:mt-12 font-bold tracking-tighter leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">
+              <a className="hover:text-gray-800">
                 <RichText render={title} />
               </a>
             </Link>
