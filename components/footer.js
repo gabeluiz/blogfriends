@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex shadow">
               <input className="p-2 border-t mr-0 border-b border-l focus:outline-none focus:bg-white text-gray-800" placeholder="seu@mail.com"/>
-                <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-black hover:bg-gray-800">
                 Ficar por dentro
               </a>
               </div>
