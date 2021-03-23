@@ -56,7 +56,7 @@ export default function NavBar({ preview }) {
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className="relative text-gray-600 focus-within:text-gray-400 ">
-                <input type="search" name="q" className="py-2 text-base px-5 pr-10 focus:shadow text-white rounded-l-lg pl-2 focus:outline-none focus:bg-white text-gray-800" placeholder="Procurar..." autoComplete="off" />
+                <input type="search" name="q" className="py-2 text-base px-5 pr-10 focus:shadow text-white pl-2 focus:outline-none focus:bg-white text-gray-800" placeholder="Procurar..." autoComplete="off" />
                 <span className="absolute items-center right-0 top-0 mt-1 mr-1">
                   <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
