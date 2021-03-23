@@ -14,9 +14,9 @@ export default function PostHeader({ title, coverImage, date, author, excerpt })
       </div>
       <div className="hidden md:block md:mb-6">
         {author && <Avatar name={author.name} picture={author.picture} />}
-        <div className="mt-6 text-sm">
+      </div>
+      <div className="mt-6 text-sm">
           <Date dateString={date} />
-        </div>
       </div>
       <SectionSeparator />
       <div className="mb-6 md:mb-8 sm:mx-0">
