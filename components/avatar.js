@@ -6,7 +6,7 @@ export default function Avatar({ name, picture }) {
         className="w-12 h-12 rounded-full mr-4"
         alt={name[0].text}
       />
-      <div className="text-xl font-bold">{name}</div>
+      <div className="text-sm font-bold">By {name}</div>
     </div>
   )
 }

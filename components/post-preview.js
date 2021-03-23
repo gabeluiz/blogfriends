@@ -26,12 +26,12 @@ export default function PostPreview({
         <div className="col-span-2 md:col-span-4">
           <h3 className="text-base md:text-xl font-bold md:mb-3 leading-snug">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">
+              <a className="hover:text-blue-600">
                 <RichText render={title} />
               </a>
             </Link>
           </h3>
-          <div className="text-xs md:text-xl mb-1">
+          <div className="text-xs md:text-sm mb-1">
             <Date dateString={date} />
           </div>
         </div>
