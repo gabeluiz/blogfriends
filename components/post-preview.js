@@ -14,31 +14,59 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
-      <div className="ml-4 mb-4 grid grid-cols-3 gap-4 md:grid-cols-4">
-        <div className="md:mb-2 md:col-span-4">
+    // <div className="mx-auto px-4 md:py-8 max-w-xl">
+    //   <div className="bg-white shadow mb-6 tracking-wide hover:shadow-medium transition-shadow duration-200">
+    //     <div className="md:mb-2 md:col-span-4 md:flex-shrink-0">
+    //       <CoverImage
+    //         title={RichText.asText(title)}
+    //         slug={slug}
+    //         url={coverImage.url}
+    //       />
+    //     </div>
+    //     <div className="col-span-2 md:col-span-4 px-4 py-2 mt-2 h-20 md:h-full">
+    //       <h3 className="text-sm md:text-base font-bold md:mb-3 leading-snug text-gray-800">
+    //         <Link as={`/posts/${slug}`} href="/posts/[slug]">
+    //           <a className="hover:text-indigo-600">
+    //             <RichText render={title} />
+    //           </a>
+    //         </Link>
+    //       </h3>
+    //       <div className="text-xs md:text-sm mb-1 text-gray-800">
+    //         {excerpt}
+    //       </div>
+    //       <div className="text-xs md:text-sm mb-1 text-gray-600">
+    //         <Date dateString={date} />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div class="m-auto px-4 py-8 max-w-xl">
+      <div class="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
+        <div>
           <CoverImage
             title={RichText.asText(title)}
             slug={slug}
             url={coverImage.url}
           />
         </div>
-        <div className="col-span-2 md:col-span-4">
-          <h3 className="text-base md:text-xl font-bold md:mb-3 leading-snug">
+        <div class="px-4 py-2 mt-2 bg-white">
+          <h2 class="font-bold text-2xl text-gray-800">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">
+              <a className="hover:text-indigo-600">
                 <RichText render={title} />
               </a>
             </Link>
-          </h3>
-          <div className="text-xs md:text-xl mb-1">
+          </h2>
+          <p class="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
+            {excerpt}
+          </p>
+          <div class="flex items-center ml-3 mt-8 mb-4 text-xs">
             <Date dateString={date} />
           </div>
         </div>
       </div>
-      <div className="md:hidden">
-        <SectionSeparator />
-      </div>
     </div>
+    
   )
 }

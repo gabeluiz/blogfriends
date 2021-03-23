@@ -1,6 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   theme: {
     extend: {
+      // fontFamily: {
+      //   sans: ['Cormorant', ...defaultTheme.fontFamily.sans],
+      // },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
