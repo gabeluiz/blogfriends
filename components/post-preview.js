@@ -41,8 +41,8 @@ export default function PostPreview({
     //   </div>
     // </div>
 
-    <div class="m-auto px-4 py-8 max-w-xl">
-      <div class="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
+    <div className="px-4 py-8 max-w-xl">
+      <div className="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
         <div>
           <CoverImage
             title={RichText.asText(title)}
@@ -50,23 +50,22 @@ export default function PostPreview({
             url={coverImage.url}
           />
         </div>
-        <div class="px-4 py-2 mt-2 bg-white">
-          <h2 class="font-bold text-2xl text-gray-800">
+        <div className="px-4 py-2 mt-2 bg-white">
+          <h2 className="font-bold text-2xl text-gray-800">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:text-indigo-600">
                 <RichText render={title} />
               </a>
             </Link>
           </h2>
-          <p class="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
+          <p className="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
             {excerpt}
           </p>
-          <div class="flex items-center ml-3 mt-8 mb-4 text-xs">
+          <div className="flex items-center ml-3 mt-8 mb-4 text-xs">
             <Date dateString={date} />
           </div>
         </div>
       </div>
     </div>
-    
   )
 }
