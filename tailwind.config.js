@@ -24,6 +24,7 @@ module.exports = {
       
       transitionDuration: {
         '0': '0ms',
+        '300': '300ms',
         '600': '600ms',
       },
       colors: {

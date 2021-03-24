@@ -45,8 +45,7 @@ export default function PostPreview({
     // </div>
 
     <div class="m-auto px-4 py-8 max-w-xl">
-      <div class="bg-white">
-        {/* hover:shadow-medium transition-shadow duration-200 shadow */}
+      <div class="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
         <div>
           <CoverImage
             title={RichText.asText(title)}
@@ -65,19 +64,19 @@ export default function PostPreview({
           <p class="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
             {excerpt}
           </p>
-          {/* <div class="flex mt-10 relative">
+          <div class="flex mt-10 relative">
             <div class="flex-auto items-center text-xs">
               <Date dateString={date} />
             </div>
             <div class="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
-              <span class="opacity-100 transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-400 transform hover:translate-x-0 hover:opacity-100 transform hover:delay-1000"><FaFacebook/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-400 transform hover:translate-x-0 hover:opacity-100 transform hover:delay-800"><FaTwitter/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-400 transform hover:translate-x-0 hover:opacity-100 transform hover:delay-600"><FaInstagram/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-400 transform hover:translate-x-0 hover:opacity-100 transform hover:delay-400"><FaWhatsapp/></a>
+              <span class="transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
+              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-1000 opacity-100"><FaFacebook/></a>
+              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-800 opacity-100"><FaTwitter/></a>
+              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-600 opacity-100"><FaInstagram/></a>
+              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-400 opacity-100"><FaWhatsapp/></a>
             </div>
-          </div> */}
-          <div class="flex mt-10 relative">
+          </div>
+          {/* <div class="flex mt-10 relative">
             <div class="flex-auto items-center text-xs">
               <Date dateString={date} />
             </div>
@@ -88,7 +87,7 @@ export default function PostPreview({
               <a href="#" class="ml-2 self-center"><FaInstagram/></a>
               <a href="#" class="ml-2 self-center"><FaWhatsapp/></a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
