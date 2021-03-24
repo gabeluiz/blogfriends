@@ -1,6 +1,7 @@
 import { Transition } from '@headlessui/react'
 import cn from 'classnames'
 import { useState } from 'react'
+import { FaThumbsUp, FaTwitter } from 'react-icons/fa';
 
 export default function NavBar({ preview }) {
   const [isOpen, setIsOpen] = useState(false)

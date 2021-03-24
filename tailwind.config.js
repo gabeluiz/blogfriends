@@ -2,10 +2,31 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
+    zIndex: {
+      '0': 0,
+     '10': 10,
+     '20': 20,
+     '30': 30,
+     '40': 40,
+     '50': 50,
+     '25': 25,
+     '50': 50,
+     '75': 75,
+     '100': 100,
+     '999': 999,
+      'auto': 'auto',
+    },
     extend: {
       // fontFamily: {
       //   sans: ['Cormorant', ...defaultTheme.fontFamily.sans],
       // },
+      transitionDelay: ['hover'],
+      
+      transitionDuration: {
+        '0': '0ms',
+        '300': '300ms',
+        '600': '600ms',
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
