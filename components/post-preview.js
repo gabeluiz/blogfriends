@@ -44,8 +44,8 @@ export default function PostPreview({
     //   </div>
     // </div>
 
-    <div class="m-auto px-4 py-8 max-w-xl">
-      <div class="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
+    <div className="mx-auto px-4 md:py-8 max-w-xl">
+      <div className="bg-white hover:shadow-medium transition-shadow duration-200 shadow">
         <div>
           <CoverImage
             title={RichText.asText(title)}
@@ -53,27 +53,27 @@ export default function PostPreview({
             url={coverImage.url}
           />
         </div>
-        <div class="px-4 py-2 mt-2 bg-white">
-          <h2 class="font-bold text-2xl text-gray-800">
+        <div className="px-4 py-2 mt-2 bg-white">
+          <h2 className="font-bold text-2xl text-gray-800">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:text-indigo-600">
                 <RichText render={title} />
               </a>
             </Link>
           </h2>
-          <p class="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
+          <p className="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
             {excerpt}
           </p>
-          <div class="flex mt-10 relative">
-            <div class="flex-auto items-center text-xs">
+          <div className="flex mt-10 relative">
+            <div className="flex-auto items-center text-xs">
               <Date dateString={date} />
             </div>
-            <div class="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
-              <span class="transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-1000 opacity-100"><FaFacebook/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-800 opacity-100"><FaTwitter/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-600 opacity-100"><FaInstagram/></a>
-              <a href="#" class="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-400 opacity-100"><FaWhatsapp/></a>
+            <div className="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
+              <span className="transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
+              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-1000 opacity-100"><FaFacebook/></a>
+              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-800 opacity-100"><FaTwitter/></a>
+              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-600 opacity-100"><FaInstagram/></a>
+              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-400 opacity-100"><FaWhatsapp/></a>
             </div>
           </div>
           {/* <div class="flex mt-10 relative">
