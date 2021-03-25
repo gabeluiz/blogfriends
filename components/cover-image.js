@@ -7,12 +7,12 @@ export default function CoverImage({ title, url, slug }) {
       src={url}
       alt={`Cover Image for ${title}`}
       className={cn('', {
-        'h-72 md:h-48 w-full object-cover md:w-72': slug,
+        "block h-24 rounded overflow-hidden" : slug,
       })}
     />
   )
   return (
-    <div className="sm:mx-0">
+    <div className="w-2/5">
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>

@@ -55,7 +55,7 @@ export default function NavBar({ preview }) {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="hidden sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className="relative text-gray-600 focus-within:text-gray-400 ">
                 <input type="search" name="q" className="py-2 text-base px-5 pr-10 focus:shadow text-white pl-2 focus:outline-none focus:bg-white text-gray-800" placeholder="Procurar..." autoComplete="off" />
                 <span className="absolute items-center right-0 top-0 mt-1 mr-1">
