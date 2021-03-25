@@ -76,18 +76,6 @@ export default function PostPreview({
               <a href="#" className="ml-2 self-center"><FaWhatsapp/></a>
             </div>
           </div>
-          {/* <div class="flex mt-10 relative">
-            <div class="flex-auto items-center text-xs">
-              <Date dateString={date} />
-            </div>
-            <div class="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
-              <span class="opacity-100 transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
-              <a href="#" class="ml-2 self-center"><FaFacebook/></a>
-              <a href="#" class="ml-2 self-center"><FaTwitter/></a>
-              <a href="#" class="ml-2 self-center"><FaInstagram/></a>
-              <a href="#" class="ml-2 self-center"><FaWhatsapp/></a>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
