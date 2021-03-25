@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <div className="px-3 md:w-2/3 mb-10 md:mb-0">
               <h2 className="text-5xl md:text-6xl font-bold mb-5 leading-tight">Newsletter</h2>
-                <h3 claclassNamess="text-gray-600 mb-7 leading-tight">As notícias que você não pode perder diretamente no seu e-mail.</h3>
+                <h3 className="text-gray-600 mb-7 leading-tight">As notícias que você não pode perder diretamente no seu e-mail.</h3>
                 <div>
                   <span className="inline-block w-40 h-1 rounded-full bg-gray-500"></span>
                   <span className="inline-block w-3 h-1 rounded-full bg-gray-500 ml-1"></span>
