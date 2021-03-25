@@ -19,9 +19,12 @@ export default function PostHeader({ title, coverImage, date, author, excerpt })
         <Date dateString={date} />
       </div>
       <SectionSeparator />
-      <div className="mb-6 md:mb-8 sm:mx-0">
+      <div className="sm:mx-0">
         <CoverImage title={RichText.asText(title)} url={coverImage.url} />
       </div>
+      <h6 className="text-sm mb-6 md:mb-8 sm:mx-0 italic text-gray-600">
+        Fonte: Esse conteúdo tem que ser dinâmico né? Tem que vir do prismic.
+      </h6>
     </>
   )
 }
