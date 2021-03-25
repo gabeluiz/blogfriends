@@ -70,10 +70,10 @@ export default function PostPreview({
             </div>
             <div className="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
               <span className="transition duration-600 z-999 text-gray-200 text-center justify-center align bg-gray-900 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
-              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-1000 opacity-100"><FaFacebook/></a>
-              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-800 opacity-100"><FaTwitter/></a>
-              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-600 opacity-100"><FaInstagram/></a>
-              <a href="#" className="ml-2 self-center transform -translate-x-full opacity-0 transition duration-300 transform hover:translate-x-0 transition delay-400 opacity-100"><FaWhatsapp/></a>
+              <a href="#" className="ml-2 self-center"><FaFacebook/></a>
+              <a href="#" className="ml-2 self-center"><FaTwitter/></a>
+              <a href="#" className="ml-2 self-center"><FaInstagram/></a>
+              <a href="#" className="ml-2 self-center"><FaWhatsapp/></a>
             </div>
           </div>
           {/* <div class="flex mt-10 relative">
