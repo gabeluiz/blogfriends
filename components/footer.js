@@ -35,7 +35,7 @@ export default function Footer() {
         {/* <!-- Copyright Bar --> */}
         <div className="pt-2">
           <div className="flex pb-5 px-3 m-auto pt-5 
-            border-t border-gray-300 text-gray-400 text-sm 
+            border-t border-gray-300 text-gray-600 text-sm 
             flex-col md:flex-row max-w-6xl">
             <div className="mt-2">
               {BLOG_NAME}
