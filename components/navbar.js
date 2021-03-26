@@ -26,7 +26,7 @@ export default function NavBar({ preview }) {
                 </svg>
               </button>
             </div>
-            <a href="/" className="font-extrabold hidden sm:block m-3 uppercase inline-flex hover:text-indigo-600">
+            <a href="/" className="font-extrabold hidden sm:block m-3 uppercase inline-flex hover:text-gray-600">
               BlogFriends
             </a>
             <div className="flex-1 flex items-center justify-center">
