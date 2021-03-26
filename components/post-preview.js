@@ -24,18 +24,27 @@ export default function PostPreview({
             slug={slug}
             url={coverImage.url}
           />
-          <div className="pl-3 w-3/5">
-            <p className="text-xs text-gray-500 uppercase font-semibold">CATEGORIA AQUI</p>
-            <h3 className="text-md font-semibold leading-tight mb-3">
+          <div className="pl-3 w-3/5 md:w-2/5">
+            <p className="text-xs text-gray-500 uppercase font-semibold">CATEGORIA AQUI, dinâmica né?</p>
+            <h3 className="text-md font-semibold leading-tight mb-8 lg:mb-24 text-lg">
               <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                <a className="hover:text-indigo-600">
+                <a className="hover:text-gray-600">
                   <RichText render={title} />
                 </a>
               </Link>
             </h3>
-            <div className="flex w-full items-center text-xs text-gray-500 font-medium">
-              <Date dateString={date} />
+            <div className="flex mt-18 relative bottom-1">
+              <div className="flex w-3/5 items-center text-xs text-gray-500 font-medium">
+                <Date dateString={date} />
+              </div>
+              <div className="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
+                <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
+                <a href="#" className="ml-2 self-center"><FaFacebook/></a>
+                <a href="#" className="ml-2 self-center"><FaTwitter/></a>
+                <a href="#" className="ml-2 self-center"><FaInstagram/></a>
+                <a href="#" className="ml-2 self-center"><FaWhatsapp/></a>
             </div>
+           </div>
           </div>
         </div>
       <SectionSeparator />
