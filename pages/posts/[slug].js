@@ -40,6 +40,7 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
                 excerpt={post.excerpt}
+                fontimg={post.fontimg}
               />
               <PostBody content={post.content} />
             </article>
