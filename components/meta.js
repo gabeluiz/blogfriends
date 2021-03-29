@@ -34,7 +34,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Um blog feito por amor por amigos ${BLOG_NAME}.`}
+        content={`Um blog feito por amigos para você! ${BLOG_NAME}.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
