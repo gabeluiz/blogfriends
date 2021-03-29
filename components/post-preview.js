@@ -38,7 +38,7 @@ export default function PostPreview({
                 <Date dateString={date} />
               </div>
               <div className="flex self-center transition duration-300 rounded overflow-hidden transform hover:scale-100">
-                <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span>
+                {/* <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span> */}
                 <a href="#" className="ml-2 self-center"><FaFacebook/></a>
                 <a href="#" className="ml-2 self-center"><FaTwitter/></a>
                 <a href="#" className="ml-2 self-center"><FaInstagram/></a>
