@@ -17,6 +17,7 @@ export default function MoreStories({ posts }) {
             author={node.author}
             slug={node._meta.uid}
             excerpt={node.excerpt}
+            fontimg={node.fontimg}
           />
         ))}
       </div>
