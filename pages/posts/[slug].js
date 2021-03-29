@@ -10,7 +10,7 @@ import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import { BLOG_NAME } from '../../lib/constants'
+import { BLOG_NAME, BLOG_URL_POST } from '../../lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
 
@@ -33,6 +33,10 @@ export default function Post({ post, morePosts, preview }) {
                   {post.title[0].text} | {BLOG_NAME}
                 </title>
                 <meta property="og:image" content={post.coverimage.url} />
+                <meta property="og:url"           content={BLOG_URL_POST+post._meta.uid} />
+                <meta property="og:type"          content="website" />
+                <meta property="og:title"         content={post.title[0].text} />
+                <meta property="og:description"   content={post.excerpt} />
               </Head>
               <PostHeader
                 title={post.title}
