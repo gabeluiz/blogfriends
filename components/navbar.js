@@ -13,7 +13,7 @@ export default function NavBar({ preview }) {
       })}
     >
       <nav className="bg-white shadow-sm fixed z-10 mx-auto inset-x-0 top-0 justify-between">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8" >
+        <div className="max-w-6xl mx-auto" >
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -26,7 +26,7 @@ export default function NavBar({ preview }) {
                 </svg>
               </button>
             </div>
-            <a href="/" className="font-extrabold hidden sm:block m-3 uppercase inline-flex hover:text-gray-600">
+            <a href="/" className="font-extrabold hidden sm:block uppercase inline-flex hover:text-gray-600">
               BlogFriends
             </a>
             <div className="flex-1 flex items-center justify-center">
@@ -55,7 +55,7 @@ export default function NavBar({ preview }) {
                 </div>
               </div>
             </div>
-            <div className="hidden sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className=" sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className="relative text-gray-600 focus-within:text-gray-400 ">
                 <input type="search" name="q" className="py-2 text-base px-5 pr-10 focus:shadow text-white pl-2 focus:outline-none focus:bg-white text-gray-800" placeholder="Procurar..." autoComplete="off" />
                 <span className="absolute items-center right-0 top-0 mt-1 mr-1">
