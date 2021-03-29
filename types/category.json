@@ -1,0 +1,10 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "name"
+      }
+    }
+  }
+}

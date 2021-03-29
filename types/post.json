@@ -28,6 +28,12 @@
         "label": "coverimage"
       }
     },
+    "fontimg": {
+      "type": "Text",
+      "config": {
+        "label": "fontimg"
+      }
+    },
     "date": {
       "type": "Date",
       "config": {
@@ -40,6 +46,14 @@
         "select": "document",
         "customtypes": ["author"],
         "label": "author"
+      }
+    },
+    "category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["category"],
+        "label": "category"
       }
     },
     "uid": {
