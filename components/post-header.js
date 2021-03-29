@@ -1,7 +1,7 @@
 import { RichText } from 'prismic-reactjs'
 import Avatar from '../components/avatar'
 import Date from '../components/date'
-import CoverImage from '../components/cover-image'
+import PostCoverImage from '../components/post-cover-image'
 import PostTitle from '../components/post-title'
 import SectionSeparator from './section-separator'
 
@@ -20,7 +20,7 @@ export default function PostHeader({ title, coverImage, date, author, excerpt })
       </div>
       <SectionSeparator />
       <div className="sm:mx-0">
-        <CoverImage title={RichText.asText(title)} url={coverImage.url} />
+        <PostCoverImage title={RichText.asText(title)} url={coverImage.url} />
       </div>
       <h6 className="text-sm mb-6 md:mb-8 sm:mx-0 italic text-gray-600">
         Fonte: Esse conteúdo tem que ser dinâmico né? Tem que vir do prismic.
