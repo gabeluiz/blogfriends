@@ -30,15 +30,15 @@ export default function PostPreview({
             </Link>
           </h2>
           <p className="hidden md:block">{excerpt}</p>
-          {/* <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span> */}
-          {/* <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
+        </div>
+        <div className="col-span-5">
+        <div className="flex flex-wrap justify-end align-bottom col-span-1">
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-500"><FaTwitter /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-pink-600"><FaInstagram /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-green-600"><FaWhatsapp /></a>
-              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a> */}
-
-        </div>
-        <div className="col-span-5">
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a>
+            </div>
           <p className="capitalize text-xs text-gray-500 md:text-sm inline-block pt-2">
             <Date dateString={date} />
           </p>
