@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { RichText } from "prismic-reactjs";
-import Avatar from "../components/avatar";
 import Date from "../components/date";
 import CoverImage from "./cover-image";
 import SectionSeparator from "./section-separator";
 import { FaFacebook, FaInstagram, FaLinkedin, FaShare, FaShareAlt, FaThumbsUp, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-import { IoShareSocialSharp, IoShareSocial } from 'react-icons/io5';
 
 
 export default function PostPreview({
@@ -13,7 +11,6 @@ export default function PostPreview({
   coverImage,
   date,
   excerpt,
-  author,
   slug,
 }) {
   return (
@@ -38,11 +35,11 @@ export default function PostPreview({
             <div className="text-xs md:text-sm flex self-center">
             <p className="text-grey-dark text-xs md:text-sm md:pr-6"><Date dateString={date} /></p>
               {/* <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span> */}
-              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
+              {/* <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-500"><FaTwitter /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-pink-600"><FaInstagram /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-green-600"><FaWhatsapp /></a>
-              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a>
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a> */}
             </div>
           </div>
         </div>

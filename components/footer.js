@@ -44,19 +44,19 @@ export default function Footer() {
           </div>
 
           <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex ">
-            <a href={FACEBOOK_URL} className="w-6 mx-1 transform hover:scale-150 hover:text-blue-600">
+            <a href={FACEBOOK_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-blue-600">
               <FaFacebook />
             </a>
-            <a href={TWITTER_URL} className="w-6 mx-1 transform hover:scale-150 hover:text-blue-500">
+            <a href={TWITTER_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-blue-500">
               <FaTwitter />
             </a>
-            <a href={YOUTUBE_URL} className="w-6 mx-1 transform hover:scale-150 hover:text-red-600">
+            <a href={YOUTUBE_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-red-600">
               <FaYoutube />
             </a>
-            <a href={INSTAGRAM_URL} className="w-6 mx-1 transform hover:scale-150 hover:text-pink-600">
+            <a href={INSTAGRAM_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-pink-600">
               <FaInstagram />
             </a>
-            <a href={WHATSAPP_URL} className="w-6 mx-1 transform hover:scale-150 hover:text-green-600">
+            <a href={WHATSAPP_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-green-600">
               <FaWhatsapp />
             </a>
           </div>
