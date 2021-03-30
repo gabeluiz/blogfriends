@@ -8,7 +8,7 @@ export default function CoverImage({ title, url, slug }) {
       src={url}
       alt={`Cover Image for ${title}`}
       className={cn('', {
-        "block rounded overflow-hidden" : slug,
+        "block rounded shadow overflow-hidden" : slug,
       })}
       width={100}
       height={100}

@@ -15,7 +15,7 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <div className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95 mb-6">
+      <div className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95 mb-6 rounded shadow">
         <CoverImage
           title={RichText.asText(title)}
           slug={slug}
@@ -44,7 +44,6 @@ export default function PostPreview({
           </div>
         </div>
       </div>
-      <SectionSeparator />
     </>
     // <div className="mx-auto px-4 py-8 max-w-xl">
     //   <div className="hover:shadow-medium transition-shadow duration-200 shadow">
