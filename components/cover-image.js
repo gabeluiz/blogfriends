@@ -8,15 +8,15 @@ export default function CoverImage({ title, url, slug }) {
       src={url}
       alt={`Cover Image for ${title}`}
       className={cn('', {
-        "block rounded shadow overflow-hidden" : slug,
+        "w-full rounded" : slug,
       })}
-      width={100}
-      height={100}
+      width={96}
+      height={88}
       layout="responsive"
     />
   )
   return (
-    <div className="w-2/5 md:w-1/5">
+    <figure className="col-span-2">
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>
@@ -24,6 +24,6 @@ export default function CoverImage({ title, url, slug }) {
       ) : (
         image
       )}
-    </div>
+    </figure>
   )
 }

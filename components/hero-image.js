@@ -7,7 +7,7 @@ export default function CoverImage({ title, url, slug }) {
       src={url}
       alt={`Cover Image for ${title}`}
       className={cn('shadow', {
-        'h-96': slug,
+        'h-96 rounded': slug,
       })}
     />
   )

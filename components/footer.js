@@ -44,20 +44,20 @@ export default function Footer() {
           </div>
 
           <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex ">
-            <a href={FACEBOOK_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-blue-600">
-              <FaFacebook />
+            <a href={FACEBOOK_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-blue-600">
+              <FaFacebook className="w-6 h-6" />
             </a>
-            <a href={TWITTER_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-blue-500">
-              <FaTwitter />
+            <a href={TWITTER_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-blue-500">
+              <FaTwitter className="w-6 h-6"/>
             </a>
-            <a href={YOUTUBE_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-red-600">
-              <FaYoutube />
+            <a href={YOUTUBE_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-red-600">
+              <FaYoutube className="w-6 h-6"/>
             </a>
-            <a href={INSTAGRAM_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-pink-600">
-              <FaInstagram />
+            <a href={INSTAGRAM_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-pink-600">
+              <FaInstagram className="w-6 h-6"/>
             </a>
-            <a href={WHATSAPP_URL} className="w-6 mx-1 text-xl transform hover:scale-150 hover:text-green-600">
-              <FaWhatsapp />
+            <a href={WHATSAPP_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-green-600">
+              <FaWhatsapp className="w-6 h-6"/>
             </a>
           </div>
         </div>
