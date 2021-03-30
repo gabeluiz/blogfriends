@@ -18,36 +18,35 @@ export default function PostPreview({
 }) {
   return (
     <>
-        <div className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-          <CoverImage
-            title={RichText.asText(title)}
-            slug={slug}
-            url={coverImage.url}
-          />
-          <div className="pl-3 w-3/5 md:w-2/5">
-            <p className="text-xs text-gray-500 uppercase font-semibold">CATEGORIA AQUI, dinâmica né?</p>
-            <h3 className="text-md font-semibold leading-tight mb-8 lg:mb-24 text-lg">
-              <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                <a className="hover:text-gray-600">
-                  <RichText render={title} />
-                </a>
-              </Link>
-            </h3>
-            <div className="flex mt-18 relative bottom-1">
-              <div className="flex w-3/5 items-center text-xs text-gray-500 font-medium">
-                <Date dateString={date} />
-              </div>
-              <div className="flex self-center">
-                {/* <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span> */}
-                <a href="#" className="ml self-center transform hover:scale-110"><FaFacebook/></a>
-                <a href="#" className="ml-2 self-center transform hover:scale-110"><FaTwitter/></a>
-                <a href="#" className="ml-2 self-center transform hover:scale-110"><FaInstagram/></a>
-                <a href="#" className="ml-2 self-center transform hover:scale-110"><FaWhatsapp/></a>
-                <a href="#" className="ml-2 self-center transform hover:scale-110"><FaLinkedin/></a>              
-              </div>
+      <div className="flex w-full transform transition-all duration-300 scale-100 hover:scale-95 mb-6">
+        <CoverImage
+          title={RichText.asText(title)}
+          slug={slug}
+          url={coverImage.url}
+        />
+        <div className="pl-3 w-3/5 md:w-2/5">
+          <p className="text-xs text-blue-500 uppercase font-bold">CATEGORIA</p>
+          <h3 className="text-xs md:text-lg font-bold">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="hover:text-gray-600">
+                <RichText render={title} />
+              </a>
+            </Link>
+          </h3>
+          <p className="hidden md:block">{excerpt}</p>
+          <div className="block fixed bottom-0 flex items-center">
+            <div className="text-xs md:text-sm flex self-center">
+            <p className="text-grey-dark text-xs md:text-sm md:pr-6"><Date dateString={date} /></p>
+              {/* <span className="transition duration-600 z-999 text-black text-center justify-center align bg-gray-200 absolute w-full h-full leading-normal rounded transform hover:-translate-x-full transition delay-300 rounded"><IoShareSocial/></span> */}
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-500"><FaTwitter /></a>
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-pink-600"><FaInstagram /></a>
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-green-600"><FaWhatsapp /></a>
+              <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a>
             </div>
           </div>
         </div>
+      </div>
       <SectionSeparator />
     </>
     // <div className="mx-auto px-4 py-8 max-w-xl">

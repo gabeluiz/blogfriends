@@ -1,12 +1,10 @@
 import Container from './container'
-import SectionSeparator from './section-separator'
 import { BLOG_NAME, FACEBOOK_URL, INSTAGRAM_URL, TWITTER_URL, WHATSAPP_URL, YOUTUBE_URL } from '../lib/constants'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa'
-import { FaCreativeCommonsSampling, FaNewspaper, FaSearch, FaStar, FaTh } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2 relative items-center justify-center">
+    <footer className="bg-accent-1 border-t border-accent-2 relative items-center justify-center mb-10 md:mb-0 bg-gray-50">
       <Container>
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
@@ -62,41 +60,6 @@ export default function Footer() {
               <FaWhatsapp />
             </a>
           </div>
-        </div>
-        <div className="h-16 md:block"></div>
-        <div className="sm:hidden bg-white absolute bottom-0 w-full border-t mt-5 border-gray-200 flex ">
-          <a href="#" className="flex flex-grow items-center justify-center p-2 text-indigo-500 hover:text-indigo-500">
-            <div className="text-center">
-              <span className="block h-8 text-3xl leading-8">
-                <FaNewspaper />
-              </span>
-              <span className="block text-xs leading-none">Today</span>
-            </div>
-          </a>
-          <a href="#" className="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-indigo-500">
-            <div className="text-center">
-              <span className="block h-8 text-3xl leading-8">
-                <FaTh />
-              </span>
-              <span className="block text-xs leading-none">Categories</span>
-            </div>
-          </a>
-          <a href="#" className="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-indigo-500">
-            <div className="text-center">
-              <span className="block h-8 text-3xl leading-8">
-                <FaStar />
-              </span>
-              <span className="block text-xs leading-none">Favorites</span>
-            </div>
-          </a>
-          <a href="#" className="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-indigo-500">
-            <div className="text-center">
-              <span className="block h-8 text-3xl leading-8">
-                <FaSearch />
-              </span>
-              <span className="block text-xs leading-none">Search</span>
-            </div>
-          </a>
         </div>
       </div>
     </footer>
