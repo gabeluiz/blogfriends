@@ -6,20 +6,19 @@ export default function CoverImage({ title, url, slug }) {
   const image = (
     <Image
       src={url}
-      alt={`Cover Image for ${title}`}
+      alt={`Imagem de: ${title}`}
       className={cn('', {
         "w-full rounded" : slug,
       })}
-      width={96}
-      height={88}
-      layout="responsive"
+      width={164}
+      height={118}
     />
   )
   return (
-    <figure className="col-span-2">
+    <figure className="w-auto h-auto"> 
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a aria-label={title}>{image}</a>
+          <a title={`Ir para: ${title}`} aria-label={title}>{image}</a>
         </Link>
       ) : (
         image

@@ -7,7 +7,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-gray-100">
         <NavBar preview={preview} />
         <main className="mt-28">{children}</main>
       </div>

@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'reac
 
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="md:max-w-4xl mx-auto">
       <div className={markdownStyles['markdown']}>
         <RichText render={content} />
         <div className="text-xl p-0 h-10 m-3 flex self-center">

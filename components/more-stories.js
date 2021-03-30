@@ -3,11 +3,11 @@ import SectionSeparator from './section-separator'
 
 export default function MoreStories({ posts }) {
   return (
-    <section>
-      <h4 className="mb-8 text-left text-xl md:text-3xl font-bold tracking-tighter leading-tight">
+    <section className="pb-10">
+      <h4 className="mb-8 text-left text-xl md:text-3xl font-bold text-gray-700 tracking-tighter leading-tight">
         Posts Recentes
       </h4>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts.map(({ node }) => (
           <PostPreview
             key={node._meta.uid}

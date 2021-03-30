@@ -1,14 +1,19 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PostCoverImage({ title, url, slug }) {
   const image = (
-    <img
+    <Image
       src={url}
-      alt={`Cover Image for ${title}`}
+      alt={`Imagem de: ${title}`}
       className={cn('', {
-        "h-52 w-52" : slug,
+        "w-full rounded" : slug,
       })}
+      width={1120}
+      height={420}
+      layout="responsive"
+      
     />
   )
   return (

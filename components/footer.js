@@ -4,12 +4,12 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube }
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2 relative items-center justify-center mb-10 md:mb-0 bg-gray-50">
+    <footer className="relative shadow-md items-center justify-center mb-10 md:mb-0 bg-gray-50">
       <Container>
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <div className="px-3 md:w-2/3 mb-10 md:mb-0">
-              <h2 className="text-5xl md:text-6xl font-bold mb-5 leading-tight">Newsletter</h2>
+              <h2 className="text-5xl text-gray-700 md:text-6xl font-bold mb-5 leading-tight">Newsletter</h2>
               <h3 className="text-gray-600 mb-7 leading-tight">As notícias que você não pode perder diretamente no seu e-mail.</h3>
               <div>
                 <span className="inline-block w-40 h-1 rounded-full bg-gray-500"></span>

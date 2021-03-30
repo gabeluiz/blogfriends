@@ -10,7 +10,7 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
   return (
     <>
       <PostTitle>{title[0].text}</PostTitle>
-      <div className="m-3 md:block md:mb-6">
+      <div className="m-3 md:block md:mb-6 text-gray-600">
         {excerpt}
       </div>
       <div className="m-3 md:block md:mb-6">
@@ -27,7 +27,7 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
         <a href="#" className="ml-2 self-center transform hover:scale-110"><FaLinkedin/></a>
       </div>
       <SectionSeparator />
-      <div className="mx-0">
+      <div>
         <PostCoverImage title={RichText.asText(title)} url={coverImage.url} />
       </div>
       <h6 className="text-xs md:text-sm mb-6 md:mb-8 mx-0 italic text-gray-600">
