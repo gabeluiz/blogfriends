@@ -4,7 +4,7 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube }
 
 export default function Footer() {
   return (
-    <footer className="relative shadow-md items-center justify-center mb-10 md:mb-0 bg-gray-50">
+    <footer className="relative shadow-md items-center justify-center">
       <Container>
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
       </Container>
       {/* <!-- Copyright Bar --> */}
-      <div className="pt-2 items-center justify-center">
+      <div className="pt-2 pb-16 md:pb-0 items-center justify-center">
         <div className="flex pb-5 px-3 m-auto pt-5 
             border-t border-gray-300 text-gray-600 text-sm 
             flex-col md:flex-row max-w-6xl items-center justify-center">
@@ -43,7 +43,7 @@ export default function Footer() {
             {'.'}
           </div>
 
-          <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex ">
+          <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex hidden md:flex">
             <a href={FACEBOOK_URL} className="w-8 mx-1 transition-transform transform hover:scale-125 hover:text-blue-600">
               <FaFacebook className="w-6 h-6" />
             </a>

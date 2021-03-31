@@ -4,16 +4,17 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-/* @layer base {
-    a {
-        text-align: center;
-        transform: translateX(-100%); 
-        opacity: 0;
-        transition: .3s linear;
-    }
-    a:hover {
-        transform: translateX(0); 
-        opacity: 1;
-        transition-delay: 1s;
+/* @layer components {
+.stylistic-quote-mark {
+    font-size: 5rem;
+    right: 100%;
+    @apply mr-2 hidden font-dank-mono text-neutral-500 absolute top-0 leading-none;
+  }
+}
+@layer utilities {
+    @screen sm {
+        .stylistic-quote-mark {
+            @apply block;
+        }
     }
 } */

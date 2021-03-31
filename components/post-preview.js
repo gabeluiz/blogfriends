@@ -18,14 +18,14 @@ export default function PostPreview({
       <div>
         <article className="grid grid-cols-3 relative max-w-4xl px-2 py-2 md:px-10 md:py-6 bg-white rounded-lg shadow-md">
           <CoverImage
-            title={RichText.asText(title)}
+            title={title[0].text}
             slug={slug}
             url={coverImage.url}
           />
           <div className="self-center col-span-2">
             <h2 className="text-gray-800 pl-2 md:pl-0 capitalize text-sm md:text-base font-bold">
               <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                <a className="hover:text-gray-600" title={`Ir para: ${RichText.asText(title)}`}>
+                <a className="hover:text-gray-600" title={`Ir para: ${title[0].text}`}>
                   <RichText render={title} />
                 </a>
               </Link>

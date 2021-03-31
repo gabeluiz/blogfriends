@@ -8,7 +8,7 @@ export default function MoreStories({ posts }) {
         Posts Recentes
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {posts.map(({ node }) => (
+        {posts.map(({node}) => (
           <PostPreview
             key={node._meta.uid}
             title={node.title}
@@ -16,7 +16,7 @@ export default function MoreStories({ posts }) {
             date={node.date}
             author={node.author}
             slug={node._meta.uid}
-            excerpt={node.excerpt}
+            // excerpt={node.excerpt}
             fontimg={node.fontimg}
           />
         ))}

@@ -13,7 +13,7 @@ export default function NavBar({ preview }) {
         'bg-accent-1 border-accent-2': !preview,
       })}
     >
-      <nav className="bg-white shadow-sm fixed z-10 mx-auto inset-x-0 top-0 justify-between">
+      <nav className="bg-white shadow-md fixed z-10 mx-auto inset-x-0 top-0 justify-between">
         <div className="max-w-6xl mx-auto px-4 md:px-0" >
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

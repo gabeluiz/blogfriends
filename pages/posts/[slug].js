@@ -36,17 +36,17 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:url"           content={BLOG_URL_POST+post._meta.uid} />
                 <meta property="og:type"          content="website" />
                 <meta property="og:title"         content={post.title[0].text} />
-                <meta property="og:description"   content={post.excerpt} />
+                {/* <meta property="og:description"   content={post.excerpt} /> */}
               </Head>
               <PostHeader
-                title={post.title}
+                title={post.title[0].text}
                 coverImage={post.coverimage}
-                date={post.date}
+                date={post.release_date}
                 author={post.author}
-                excerpt={post.excerpt}
+                // excerpt={post.excerpt}
                 fontimg={post.fontimg}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.body} />
             </article>
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
@@ -61,6 +61,7 @@ export default function Post({ post, morePosts, preview }) {
 
 export async function getStaticProps({ params, preview = false, previewData }) {
   const data = await getPostAndMorePosts(params.slug, previewData)
+  console.log(data);
   return {
     props: {
       preview,
@@ -72,9 +73,8 @@ export async function getStaticProps({ params, preview = false, previewData }) {
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug()
-
   return {
-    paths: allPosts?.map(({ node }) => `/posts/${node._meta.uid}`) || [],
+    paths: allPosts.map(({node}) => `/posts/${node._meta.uid}`) || [],
     fallback: true,
   }
 }

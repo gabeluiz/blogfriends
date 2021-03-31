@@ -1,4 +1,3 @@
-import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -7,9 +6,7 @@ export default function PostCoverImage({ title, url, slug }) {
     <Image
       src={url}
       alt={`Imagem de: ${title}`}
-      className={cn('', {
-        "w-full rounded" : slug,
-      })}
+      className="rounded-md w-full object-cover"
       width={1120}
       height={420}
       layout="responsive"
