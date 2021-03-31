@@ -51,16 +51,11 @@ export default function NavBar({ preview }) {
                 </div>
               </div>
             </div>
-            <div className=" sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <div className="relative text-gray-600 focus-within:text-gray-400 ">
-                <input type="search" name="q" className="py-2 text-base px-5 pr-10 focus:shadow text-white pl-2 focus:outline-none focus:bg-white text-gray-800" placeholder="Procurar..." autoComplete="off" />
-                <span className="absolute items-center right-0 top-0 mt-1 mr-1">
-                  <button type="submit" className="p-2 focus:outline-none focus:shadow-outline">
-                    <FaSearch />
-                  </button>
-                </span>
-              </div>
-            </div>
+              <span className="w-screen md:w-1/3 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-md flex hidden md:flex">
+                <input type="search" name="serch" placeholder="Procurar..."
+                  className="flex-grow px-4 rounded-md text-sm text-gray-600 focus:outline-none" />
+                <FaSearch className="m-3 mr-5 text-lg text-gray-600 w-4 h-4"/>
+              </span>
           </div>
         </div>
         {/* <!-- Mobile menu, show/hide based on menu state. --> */}

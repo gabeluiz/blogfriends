@@ -5,11 +5,7 @@ import Quote from '../components/quote'
 import Image from 'next/image'
 
 export default function PostBody({ content }) {
-  console.log('content');
-
-
   if (content) {
-
     const blogContent = content.map((slice) => {
       if (slice.type == 'text') {
         return RichText.render(slice.primary.text);

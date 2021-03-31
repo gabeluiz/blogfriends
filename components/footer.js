@@ -24,7 +24,7 @@ export default function Footer() {
                   <input type="email" className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:shadow" placeholder="email@exemplo.com" />
                 </div>
                 <div>
-                  <button className="block w-full bg-gray-900 hover:bg-gray-800 focus:bg-indigo-700 transition-colors text-white rounded-lg px-3 py-2 font-semibold">Inscreva-se</button>
+                  <button className="block w-full bg-gray-900 hover:bg-gray-800 focus:bg-gray-700 transition-colors text-white rounded-lg px-3 py-2 font-semibold">Inscreva-se</button>
                 </div>
               </form>
             </div>
