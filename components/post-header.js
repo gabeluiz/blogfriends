@@ -19,7 +19,6 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
       </div>
       <div className="m-3 text-xs">
         <Date dateString={date} />
-        {date}
       </div>
       <div className="text-xl p-0 h-10 m-3 flex self-center">
         <a href="#" className="self-center transform hover:scale-110"><FaFacebook /></a>
