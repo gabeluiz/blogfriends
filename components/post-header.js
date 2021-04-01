@@ -55,8 +55,8 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
               url: `/posts/${slug}`,
             }}
           >
-            <button className="inset-0 bottom-0 text-center justify-center p-0 w-16 h-16 bg-white text-gray-500 hover:text-white rounded-full hover:bg-gray-800 shadow mouse transition ease-in duration-200 focus:outline-none">
-              <FaShare className="w-6 h-6 inline-block " />
+            <button className="inset-0 bottom-0 text-center justify-center p-0 w-12 h-12 bg-white text-gray-500 hover:text-white rounded-full hover:bg-gray-800 shadow mouse transition ease-in duration-200 focus:outline-none">
+              <FaShare className="w-6 h-6 inline-block "/>
             </button>
           </RWebShare>
       </div>
