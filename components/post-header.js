@@ -12,13 +12,13 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
     <>
       <PostTitle>{title}</PostTitle>
       <div className="m-3 md:block md:mb-6 text-gray-600">
-        {/* {excerpt} */}
+        {excerpt}
       </div>
       <div className="m-3 md:block md:mb-6">
         {author && <Avatar name={author.name} picture={author.picture} />}
       </div>
       <div className="m-3 text-xs">
-        {/* <Date dateString={date} /> */}
+        <Date dateString={date} />
         {date}
       </div>
       <div className="text-xl p-0 h-10 m-3 flex self-center">
