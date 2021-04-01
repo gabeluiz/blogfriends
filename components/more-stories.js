@@ -13,7 +13,7 @@ export default function MoreStories({ posts }) {
             key={node._meta.uid}
             title={node.title}
             coverImage={node.coverimage}
-            date={node.date}
+            date={node.release_date}
             author={node.author}
             slug={node._meta.uid}
             // excerpt={node.excerpt}
