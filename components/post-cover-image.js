@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function PostCoverImage({ title, url, slug }) {
+export default function PostCoverImage({ title, url }) {
   const image = (
     <Image
       src={url}
@@ -10,18 +10,12 @@ export default function PostCoverImage({ title, url, slug }) {
       width={1120}
       height={420}
       layout="responsive"
-      
+
     />
   )
   return (
     <div className="m-0">
-      {slug ? (
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a aria-label={title}>{image}</a>
-        </Link>
-      ) : (
-        image
-      )}
+      {image}
     </div>
   )
 }

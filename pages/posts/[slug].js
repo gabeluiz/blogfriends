@@ -43,6 +43,7 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverimage}
                 date={post.release_date}
                 author={post.author}
+                slug={post._meta.uid}
                 // excerpt={post.excerpt}
                 fontimg={post.fontimg}
               />
@@ -61,7 +62,6 @@ export default function Post({ post, morePosts, preview }) {
 
 export async function getStaticProps({ params, preview = false, previewData }) {
   const data = await getPostAndMorePosts(params.slug, previewData)
-  console.log(data);
   return {
     props: {
       preview,
