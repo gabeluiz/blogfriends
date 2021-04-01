@@ -1,8 +1,14 @@
-import { format } from 'date-fns'
-import { Date as PrismicDate } from 'prismic-reactjs'
-
+import { format, parseISO } from "date-fns";
+import { Date as PrismicDate } from "prismic-reactjs";
+import brazilLocale from "date-fns/locale/pt";
 export default function Date({ dateString }) {
-  const date = PrismicDate(dateString)
-  // return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>
-  return date;
+  
+ 
+  if (dateString) {
+    const parseDate = parseISO(dateString);
+
+    const formattedDate = format(parseDate, "dd 'de' MMMM, yyyy", {locale: brazilLocale});
+    return <time className=""dateTime={formattedDate}>{formattedDate}</time>;
+  }
+  return false;
 }

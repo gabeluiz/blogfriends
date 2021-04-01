@@ -13,6 +13,8 @@ export default function PostPreview({
   excerpt,
   slug,
 }) {
+  console.log(date)
+  
   return (
     <>
       <div>
