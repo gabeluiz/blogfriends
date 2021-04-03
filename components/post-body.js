@@ -40,26 +40,28 @@ export default function PostBody({ content }) {
       }
     });
     return (
-      <div className="md:max-w-4xl mx-auto text-gray-700">
-        <div className={markdownStyles["markdown"]}>{blogContent}</div>
-        <div className="text-xl p-0 h-10 m-3 flex self-center">
-          <a href="#" className="self-center transform hover:scale-110">
+      <>
+        <div className="md:max-w-4xl mx-auto text-gray-700">
+          <div className={markdownStyles["markdown"]}>{blogContent}</div>
+        </div>
+        <div className="text-2xl p-0 h-10 m-4 text-gray-900 flex self-center">
+          <a href="#" className="self-center transform hover:scale-125">
             <FaFacebook />
           </a>
-          <a href="#" className="ml-2 self-center transform hover:scale-110">
+          <a href="#" className="ml-4 self-center transform hover:scale-125">
             <FaTwitter />
           </a>
-          <a href="#" className="ml-2 self-center transform hover:scale-110">
+          <a href="#" className="ml-4 self-center transform hover:scale-125">
             <FaInstagram />
           </a>
-          <a href="#" className="ml-2 self-center transform hover:scale-110">
+          <a href="#" className="ml-4 self-center transform hover:scale-125">
             <FaWhatsapp />
           </a>
-          <a href="#" className="ml-2 self-center transform hover:scale-110">
+          <a href="#" className="ml-4 self-center transform hover:scale-125">
             <FaLinkedin />
           </a>
         </div>
-      </div>
+      </>
     );
   }
   //Retornar pagina de erro.... mas para teste null já vale.

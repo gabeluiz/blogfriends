@@ -10,9 +10,11 @@ import SectionSeparator from '../components/section-separator'
 
 
 export default function Index({ preview, allPosts }) {
-  const heroPost1 = allPosts[0].node
-  const heroPost2 = allPosts[1].node
-  const morePosts = allPosts.slice(2)
+
+    const heroPost1 = allPosts[0].node
+    const heroPost2 = allPosts[1].node
+    const morePosts = allPosts.slice(2)
+  
   return (
     <>
       <Layout preview={preview}>

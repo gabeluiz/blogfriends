@@ -13,8 +13,6 @@ export default function PostPreview({
   excerpt,
   slug,
 }) {
-  console.log(date)
-  
   return (
     <>
       <div>
@@ -25,7 +23,7 @@ export default function PostPreview({
             url={coverImage.url}
           />
           <div className="self-center col-span-2">
-            <h2 className="text-gray-800 pl-2 md:pl-0 capitalize text-sm md:text-base font-bold">
+            <h2 className="text-gray-800 pl-2 md:pl-0 capitalize text-sm md:text-lg font-bold">
               <Link as={`/posts/${slug}`} href="/posts/[slug]">
                 <a className="hover:text-gray-600" title={`Ir para: ${title[0].text}`}>
                   <RichText render={title} />
@@ -35,13 +33,13 @@ export default function PostPreview({
             <p className="pl-2 md:pl-0 capitalize text-xs text-gray-500 md:text-sm inline-block pt-2">
               <Date dateString={date} />
             </p>
-            <div className="flex flex-wrap justify-end align-bottom col-span-1">
+            {/* <div className="flex flex-wrap justify-end align-bottom col-span-1">
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaFacebook /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-500"><FaTwitter /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-pink-600"><FaInstagram /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-green-600"><FaWhatsapp /></a>
               <a href="#" className="w-6 md:w-10 self-center md:text-2xl transform hover:scale-150 text-blue-600"><FaLinkedin /></a>
-            </div>
+            </div> */}
           </div>
         </article>
       </div>

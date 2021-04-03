@@ -20,12 +20,22 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
       <div className="m-3 text-xs">
         <Date dateString={date} />
       </div>
-      <div className="text-xl p-0 h-10 m-3 flex self-center">
-        <a href="#" className="self-center transform hover:scale-110"><FaFacebook /></a>
-        <a href="#" className="ml-2 self-center transform hover:scale-110"><FaTwitter /></a>
-        <a href="#" className="ml-2 self-center transform hover:scale-110"><FaInstagram /></a>
-        <a href="#" className="ml-2 self-center transform hover:scale-110"><FaWhatsapp /></a>
-        <a href="#" className="ml-2 self-center transform hover:scale-110"><FaLinkedin /></a>
+      <div className="text-2xl p-0 h-10 m-4 text-gray-900 flex self-center">
+        <a href="#" className="self-center transform hover:scale-125">
+          <FaFacebook />
+        </a>
+        <a href="#" className="ml-4 self-center transform hover:scale-125">
+          <FaTwitter />
+        </a>
+        <a href="#" className="ml-4 self-center transform hover:scale-125">
+          <FaInstagram />
+        </a>
+        <a href="#" className="ml-4 self-center transform hover:scale-125">
+          <FaWhatsapp />
+        </a>
+        <a href="#" className="ml-4 self-center transform hover:scale-125">
+          <FaLinkedin />
+        </a>
       </div>
       <SectionSeparator />
       <div>
@@ -49,15 +59,15 @@ export default function PostHeader({ title, coverImage, date, author, excerpt, f
 
       {/* floating button para compartilhar no bottom  */}
       <div className="md:hidden block fixed m-4 inset-x-0 mb-8 bottom-0 z-20 text-center justify-center">
-          <RWebShare
-            data={{
-              url: `/posts/${slug}`,
-            }}
-          >
-            <button className="inset-0 bottom-0 text-center justify-center p-0 w-12 h-12 bg-white text-gray-500 hover:text-white rounded-full hover:bg-gray-800 shadow mouse transition ease-in duration-200 focus:outline-none">
-              <FaShare className="w-6 h-6 inline-block "/>
-            </button>
-          </RWebShare>
+        <RWebShare
+          data={{
+            url: `/posts/${slug}`,
+          }}
+        >
+          <button className="inset-0 bottom-0 text-center justify-center p-0 w-12 h-12 bg-white text-gray-500 hover:text-white rounded-full hover:bg-gray-800 shadow mouse transition ease-in duration-200 focus:outline-none">
+            <FaShare className="w-6 h-6 inline-block " />
+          </button>
+        </RWebShare>
       </div>
     </>
   )

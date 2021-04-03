@@ -44,7 +44,7 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.release_date}
                 author={post.author}
                 slug={post._meta.uid}
-                // excerpt={post.excerpt}
+                excerpt={post.excerpt}
                 fontimg={post.fontimg}
               />
               <PostBody content={post.body} />
