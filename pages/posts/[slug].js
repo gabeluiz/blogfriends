@@ -36,7 +36,7 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:url"           content={BLOG_URL_POST+post._meta.uid} />
                 <meta property="og:type"          content="website" />
                 <meta property="og:title"         content={post.title[0].text} />
-                {/* <meta property="og:description"   content={post.excerpt} /> */}
+                <meta property="og:description"   content={post.excerpt} />
               </Head>
               <PostHeader
                 title={post.title[0].text}
